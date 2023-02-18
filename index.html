@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<!-- FIREBASE -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+
+<!-- datepicker cdn -->
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+
+
+
+
+<head>
+    <!-- LOading function J Query link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentist Website Design</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- loading function&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+    <div class="loader-bg">
+        <h3>Loading...</h3>
+        <div class="loader">
+            <span></span>
+        </div>
+    </div>
+
+    <!-- End the loading function%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header fixed-top">
+
+        <div class="container">
+
+            <div class="row align-items-center justify-content-between">
+
+                <a href="#home" class="logo">Dentist<span>Care.</span></a>
+
+                <nav class="nav">
+                    <a href="#home">home</a>
+                    <a href="#about">about</a>
+                    <a href="#services">services</a>
+                    <a href="#reviews">reviews</a>
+                    <a href="#contact">contact</a>
+                </nav>
+
+                <a href="#contact" class="link-btn">make appointment</a>
+
+                <div id="menu-btn" class="fas fa-bars"></div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="container">
+
+            <div class="row min-vh-100 align-items-center">
+                <div class="content text-center text-md-left">
+                    <h3>let us brighten your smile</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium itaque, quasi aliquam alias tempora voluptatibus.</p>
+                    <a href="#contact" class="link-btn">make appointment</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-6 image">
+                    <img src="images/about-img.jpg" class="w-100 mb-5 mb-md-0" alt="">
+                </div>
+
+                <div class="col-md-6 content">
+                    <h2>About us</h2>
+                    <h3>True Healthcare For Your Family</h3>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cupiditate vero in provident ducimus. Totam quas labore mollitia cum nisi, sint, expedita rem error ipsa, nesciunt ab provident. Aperiam, officiis!</p>
+                    <a href="#contact" class="link-btn">make appointment</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- services section starts  -->
+
+    <section class="services" id="services">
+
+        <h1 class="heading">our services</h1>
+
+        <div class="box-container container">
+
+            <div class="box">
+                <img src="images/icon-1.svg" alt="">
+                <h3>Alignment specialist</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, non?</p>
+            </div>
+
+            <div class="box">
+                <img src="images/icon-2.svg" alt="">
+                <h3>Cosmetic dentistry</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, non?</p>
+            </div>
+
+            <div class="box">
+                <img src="images/icon-3.svg" alt="">
+                <h3>Oral hygiene experts</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, minima?</p>
+            </div>
+
+            <div class="box">
+                <img src="images/icon-4.svg" alt="">
+                <h3>Root canal specialist</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, minima?</p>
+            </div>
+
+            <div class="box">
+                <img src="images/icon-5.svg" alt="">
+                <h3>Live dental advisory</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, minima?</p>
+            </div>
+
+            <div class="box">
+                <img src="images/icon-6.svg" alt="">
+                <h3>Cavity inspection</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, minima?</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- services section ends -->
+
+    <!-- process section starts  -->
+
+    <section class="process">
+
+        <h1 class="heading">work process</h1>
+
+        <div class="box-container container">
+
+            <div class="box">
+                <img src="images/process-1.png" alt="">
+                <h3>Cosmetic Dentistry</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, excepturi?</p>
+            </div>
+
+            <div class="box">
+                <img src="images/process-2.png" alt="">
+                <h3>Pediatric Dentistry</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, excepturi?</p>
+            </div>
+
+            <div class="box">
+                <img src="images/process-3.png" alt="">
+                <h3>Dental Implants</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, excepturi?</p>
+            </div>
+
+        </div>
+
+    </section>
+    <br>
+    <!-- process section ends -->
+
+    <!-- reviews section starts  -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="row blog">
+                <h1 class="center mx-auto text-center py-4">Our reviews</h1>
+
+                <div class="col-md-12">
+                    <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+                        <ol class="invisible carousel-indicators">
+                            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#blogCarousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="our-team">
+                                            <div class="pic">
+                                                <img src="./images/pic-2.png">
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">Dana Robins</h3>
+                                                <span class="post">Marketing Consultant</span>
+                                            </div>
+                                            <ul class="social">
+                                                <li>
+                                                    <a href="#" class="fa fa-envelope"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="our-team">
+                                            <div class="pic">
+                                                <img src="images/pic-3.png">
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">John Doe</h3>
+                                                <span class="post">Marketing Consultant</span>
+                                            </div>
+                                            <ul class="social">
+                                                <li>
+                                                    <a href="#" class="fa fa-envelope"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="our-team">
+                                            <div class="pic">
+                                                <img src="https://i.ibb.co/L8Pj1mg/o6EuTCT6.jpg">
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">Markus Baas</h3>
+                                                <span class="post">Financial Expert</span>
+                                            </div>
+                                            <ul class="social">
+                                                <li>
+                                                    <a href="#" class="fa fa-envelope"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="our-team">
+                                            <div class="pic">
+                                                <img src="images/pic-2.png">
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">Sophia Lee</h3>
+                                                <span class="post">Customer Support</span>
+                                            </div>
+                                            <ul class="social">
+                                                <li>
+                                                    <a href="#" class="fa fa-envelope"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="our-team">
+                                            <div class="pic">
+                                                <img src="images/pic-1.png">
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">Ted Robbins</h3>
+                                                <span class="post">Law Expert</span>
+                                            </div>
+                                            <ul class="social">
+                                                <li>
+                                                    <a href="#" class="fa fa-envelope"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="our-team">
+                                            <div class="pic">
+                                                <img src="https://i.ibb.co/L8Pj1mg/o6EuTCT6.jpg">
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">Noel Flantier</h3>
+                                                <span class="post">Marketing Consultant</span>
+                                            </div>
+                                            <ul class="social">
+                                                <li>
+                                                    <a href="#" class="fa fa-envelope"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="our-team">
+                                            <div class="pic">
+                                                <img src="https://i.ibb.co/L8Pj1mg/o6EuTCT6.jpg">
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">Ernesto Appia</h3>
+                                                <span class="post">Team Leader</span>
+                                            </div>
+                                            <ul class="social">
+                                                <li>
+                                                    <a href="#" class="fa fa-envelope"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="our-team">
+                                            <div class="pic">
+                                                <img src="https://i.ibb.co/L8Pj1mg/o6EuTCT6.jpg">
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">Rosita Jimenez</h3>
+                                                <span class="post">Marketing Consultant</span>
+                                            </div>
+                                            <ul class="social">
+                                                <li>
+                                                    <a href="#" class="fa fa-envelope"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                        </div>
+                        <!--.carousel-inner-->
+                    </div>
+                    <!--.Carousel-->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- reviews section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> make appointment</h1>
+
+
+
+        <!-- <span>your name :</span>
+        <input type="text" id="name" name="name" placeholder="enter your name" class="box" required>
+        <span>your email :</span>
+        <input type="email" id="email" name="email" placeholder="enter your email" class="box" required>
+        <span>your number :</span>
+        <input type="number" id="number" name="number" placeholder="enter your number" class="box" required>
+        <span>appointment date :</span>
+        <label>Select Date: </label>
+        <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+            <input class="form-control" id="myDate" type="text" readonly />
+            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+        </div> -->
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <span>your name :</span>
+                        <input type="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter your Name">
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <span>your Email :</span>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email">
+
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+
+                    <div class="form-group">
+
+                        <span>your Phone number:</span>
+
+                        <input type="number" class="form-control" id="number" aria-describedby="emailHelp" placeholder="Enter your phone number">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="form-group">
+
+                        <span>appointment date:</span>
+                        <div id="datepicker" style="margin-left: -1%;" class="input-group date" data-date-format="mm-dd-yyyy">
+
+                            <input class="form-control" id="myDate" type="text" readonly />
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar "></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5" style="margin-top:2.5% ;">
+
+                    <button id="submitButton" onclick="submitform()">make appointment</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </form>
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container container">
+
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>phone number</h3>
+                <p>+92314223342</p>
+                <p>+92345567783</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>our address</h3>
+                <p>, Pakistan - 400104</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-clock"></i>
+                <h3>opening hours</h3>
+                <p>00:07am to 10:00pm</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>email address</h3>
+                <p>kashanafzal2221@gmail.com</p>
+
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
+
+    <!-- j query -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script src="./js/firebase.js"></script>
+    <script src="./js/dr.js"></script>
+
+    <script>
+        $(function() {
+            $("#datepicker").datepicker({
+                autoclose: true,
+                todayHighlight: true
+            }).datepicker('update', new Date());
+        });
+    </script>
+
+</body>
+
+</html>
